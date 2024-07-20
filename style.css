@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url(./stadium-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.watch-box {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Electrolize", sans-serif;
+    font-size: 1.5em;
+    padding: 3rem;
+    max-width: 550px;
+    width: 75%;
+    border-radius: 50px;
+    background: rgb(118, 118, 118);
+    background: linear-gradient(0deg, rgba(118, 118, 118, 1) 0%, rgba(68, 68, 68, 1) 100%);
+    background: url(./leather-bg.jpg);
+    border: 3px outset;
+}
+
+.watch {
+    padding: 3rem;
+}
+
+.watch h1 {
+    /* background: rgb(94, 179, 94); */
+    padding: 25px 30px;
+    border-radius: 10px;
+    color: rgb(94, 179, 94);
+    font-family: monospace;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(73, 73, 73, 1) 100%);
+    border: 1px solid #fff;
+}
+
+.buttons button {
+    padding: 25px 15px;
+    outline: none;
+    border: none;
+    color: #000;
+    text-transform: uppercase;
+    background: lightgray;
+    border-radius: 60%;
+    border: 2px outset #fff;
+    margin: 0 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    text-align: left;
+}
+
+#start {
+    color: #fff;
+    background: rgb(80, 169, 0);
+    background: linear-gradient(0deg, rgba(80, 169, 0, 1) 0%, rgba(97, 218, 19, 1) 100%);
+}
+
+#pause {
+    background: rgb(255, 252, 0);
+    background: linear-gradient(0deg, rgba(255, 252, 0, 1) 0%, rgba(255, 253, 112, 1) 100%);
+}
+
+#reset {
+    color: #fff;
+    background: rgb(255, 0, 0);
+    background: linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgba(255, 107, 107, 1) 100%);
+}
+
+h1.paused {
+    color: rgb(255, 18, 18);
+}
+
+@media (max-width: 768px) {
+    .watch-box {
+        font-size: 1.2em;
+        padding: 1.5rem;
+    }
+
+    .watch {
+        padding: 1.5rem;
+    }
+
+    .buttons button {
+        padding: 20px 20px;
+        min-width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .watch-box {
+        font-size: 1em;
+        padding: 1rem;
+    }
+
+    .watch {
+        padding: 1rem;
+    }
+
+    .buttons button {
+        padding: 15px 15px;
+        min-width: 60px;
+    }
+}
